@@ -4,9 +4,9 @@ public class CuentaBancaria {
     double saldo;
     boolean activa;
     public void depositar(double monto){
-        if (this.saldo>=0){
+
             this.saldo+=monto;
-        }
+
 
     }
     public boolean retirar(double monto){
@@ -21,7 +21,7 @@ public class CuentaBancaria {
     }
     public void mostrarEstado(){
         String reporte = """
-                Número de cuenta: %f
+                Número de cuenta: %s
                 Titular: %s
                 Saldo: %f
                 Cuenta Activa: %b
